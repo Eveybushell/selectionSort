@@ -4,7 +4,8 @@ def selectionSort(array):
     # Find the smallest number
     for i in range(size):
         smallest = i
-        # Each time we find the smallest, we move forward one index and find the next smallest
+        # Each time we find the smallest, we swap it,
+        # move forward one index, and find the next smallest
         for j in range(i + 1, size):
             if array[j] < array[smallest]:
                 smallest = j
